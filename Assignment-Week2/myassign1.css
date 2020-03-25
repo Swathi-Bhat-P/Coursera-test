@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+.row{
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	/*display: flex;
+	justify-content: space-between;*/
+	
+	}
+section>div{
+	
+	border-spacing: 10px;
+	padding: 10px;
+
+	width: 20%;
+	/*flex-basis: 30%;*/
+	float: left;
+	background-color: aqua;
+	font-weight: bold;
+	border: 5px solid black;
+	font-family: Comic Sans MS;
+}
+#col{
+	margin-right: : 5px;
+	
+}
+#p1{
+	border:5px solid black;
+	position: relative;
+	width: 30%;
+	left: 73.5%;
+	bottom:10px;
+
+	background-color: yellow;
+	border-top: none;
+	font-weight: bolder;
+	
+}
+#p2{
+	border:5px solid black;
+	position: relative;
+	width: 30%;
+	left: 73.5%;
+	bottom:10px;
+	color: white;
+	background-color: green;
+	border-top: none;
+	font-weight: bolder;
+
+}
+#p3{
+	border:5px solid black;
+	position: relative;
+	width: 30%;
+	left: 73.5%;
+	bottom:10px;
+
+	background-color: red;
+	border-top: none;
+	color: white;
+	font-weight: bolder;
+}
+
+@media(min-width: 992px){
+	section>div{
+		width: 33.3%;
+margin-right: : 5px;
+		/*flex-basis: 30%;*/
+	float: left;
+	}
+
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.col1,.col2{
+		width: 50%;
+		float: left;
+	}
+
+.col3{
+		clear: left;
+		width: 100%;
+	}
+	#p3{
+			width:28%;
+	}
+}
+
+@media(max-width: 767px){
+
+.col1,.col2,.col3{
+		clear: left;
+		width: 100%;
+	}
+
+	#p1,#p2,#p3{
+			width:28.5%;
+		}
+}
